@@ -6,34 +6,58 @@
 <link rel="stylesheet" href="picnic.min.css">
 
 <body>
-<p>How many
-<select name="item1" id="item1">
-    <option value="510072000000" selected>Earth</option>
-    <option value="696241000">Texas</option>
-    <option value="640679000">France</option>
-    <option value="20779000">Wales</option>
-    <option value="380000">Isle of Wight</option>
-    <option value="7140">Football Pitch</option>
-    <option value="1250">Olymic swimming pool</option>
-    <option value="54">Double decker bus</option>
-    <option value="0.001426">Matchbox</option>
-</select>
- in a 
-<select name="item2" id="item2">
-    <option value="510072000000" selected>Earth</option>
-    <option value="696241000">Texas</option>
-    <option value="640679000">France</option>
-    <option value="20779000">Wales</option>
-    <option value="380000">Isle of Wight</option>
-    <option value="7140">Football Pitch</option>
-    <option value="1250">Olymic swimming pool</option>
-    <option value="54">Double decker bus</option>
-    <option value="0.001426">Matchbox</option>
-</select>
 
-<button id="gobutton">Go!</button>
-</p>
-<p><span id="result"></span></p>
+<div class="flex three">
+  <div>
+    <article class="card">
+      <header>Area</header>
+		<select name="item1" id="item1">
+    		<option value="510072000000" selected>Earth</option>
+    		<option value="696241000">Texas</option>
+    		<option value="640679000">France</option>
+    		<option value="20779000">Wales</option>
+    		<option value="380000">Isle of Wight</option>
+    		<option value="7140">Football Pitch</option>
+    		<option value="1250">Olymic swimming pool</option>
+    		<option value="54">Double decker bus</option>
+    		<option value="0.001426">Matchbox</option>
+		</select>
+ in a 
+		<select name="item2" id="item2">
+    		<option value="510072000000" selected>Earth</option>
+    		<option value="696241000">Texas</option>
+    		<option value="640679000">France</option>
+    		<option value="20779000">Wales</option>
+    		<option value="380000">Isle of Wight</option>
+    		<option value="7140">Football Pitch</option>
+    		<option value="1250">Olymic swimming pool</option>
+    		<option value="54">Double decker bus</option>
+    		<option value="0.001426">Matchbox</option>
+		</select>
+		<footer>
+        <button id="gobutton">Go!</button>
+		<p><span id="result"></span></p>
+      	</footer>
+    </article>
+  </div>
+  <div>
+    <article class="card">
+    	<header>Length</header>
+      <footer>
+        <p>coming soon</p>
+      </footer>
+    </article>
+  </div>
+  <div>
+    <article class="card">
+    <header>Weight</header>
+      <footer>
+        <p>coming soon</p>
+      </footer>
+    </article>
+  </div>
+</div>
+
 <script>
 
 function setResult(){
