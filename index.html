@@ -42,8 +42,10 @@ function setResult(){
     var nameOne = selector[selector.selectedIndex].text;
 
 	// get the value from item2
-	var valueTwo = 50;
-	var nameTwo = "double deck bus";
+	selector = document.getElementById('item2');
+    var valueTwo = selector[selector.selectedIndex].value;
+    var nameTwo = selector[selector.selectedIndex].text;
+
 
 	// do maths 
 	var result = valueTwo/valueOne;
