@@ -8,34 +8,41 @@
 
 <body>
 
-<div class="flex three">
-  <div>
-    <article class="card">
-      <header>Length</header>
-		<select name="length1" id="length1">
+<div>
+    <div style="text-align: center;" class="tabs three">
+        <input id="tabC-1" type="radio" name="tabgroupC" checked aria-hidden="true">
+        <label for="tabC-1" class="pseudo button toggle">Length</label>
+        <span> / </span>
+        <input id="tabC-2" type="radio" name="tabgroupC" aria-hidden="true">
+        <label for="tabC-2" class="pseudo button toggle">Area</label>
+        <span> / </span>
+        <input id="tabC-3" type="radio" name="tabgroupC" aria-hidden="true">
+        <label for="tabC-3" class="pseudo button toggle">Weight</label>
+        <div class="row">
+            <div class="card">
+                <header>Length</header>
+        <select name="length1" id="length1">
         <option value="42195">Marathon</option>
-    		<option value="8848" selected>Mount Everest</option>
-    		<option value="120">Football Pitch</option>
-    		<option value="25">Blue Whale</option>
+            <option value="8848" selected>Mount Everest</option>
+            <option value="120">Football Pitch</option>
+            <option value="25">Blue Whale</option>
         <option value="0.138">iPhone 7</option>
-		</select>
+        </select>
  in a 
-		<select name="length2" id="length2">
+        <select name="length2" id="length2">
         <option value="42195">Marathon</option>
         <option value="8848" selected>Mount Everest</option>
         <option value="120">Football Pitch</option>
         <option value="25">Blue Whale</option>
         <option value="0.138">iPhone 7</option>
-		</select>
-		<footer>
+        </select>
+        <footer>
         <button id="lengthButton">Go!</button>
-		<p><span id="lengthResult"></span></p>
-      	</footer>
-    </article>
-  </div>
-  <div>
-    <article class="card">
-      <header>Area</header>
+        <p><span id="lengthResult"></span></p>
+        </footer>
+            </div>
+            <div class="card">
+                <header>Area</header>
     <select name="area1" id="area1">
         <option value="510072000000" selected>Earth</option>
         <option value="696241000">Texas</option>
@@ -65,9 +72,29 @@
         <button id="areaButton">Go!</button>
     <p><span id="areaResult"></span></p>
         </footer>
-    </article>
-  </div>
+            </div>
+            <div class="card">
+                <header>
+                    <h3>Subscribe?</h3>
+                </header>
+                <section>
+                    <input type="text" placeholder="Full Name" aria-label="Full Name">
+                </section>
+                <section>
+                    <input type="email" placeholder="Email" aria-label="Email">
+                </section>
+                <footer>
+                    <button class="success">Finish!</button>
+                    <label for="tabC-2" class="button dangerous">Back</label>
+                </footer>
+            </div>
+        </div>
+    </div>
 </div>
+<div>
+    <footer>Built with thanks to <a href="https://picnicss.com/">Picnic CSS</a>, <a href="https://umbrellajs.com/">Umbrella JS</a> & <a href="https://github.com/blakeembrey/pluralize">Pluralise</a></footer>
+</div>
+
 
 
 <script src="main.js"></script>
