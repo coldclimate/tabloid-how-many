@@ -24,3 +24,4 @@ function setResult(first, second, destination){
 
 u('#lengthButton').on('click', function(){setResult("length1", "length2", "lengthResult") });
 u('#areaButton').on('click', function(){setResult("area1", "area2", "areaResult") });
+u('#weightButton').on('click', function(){setResult("weight1", "weight2", "weightResult") });

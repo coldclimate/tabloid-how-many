@@ -20,7 +20,7 @@
         <label for="tabC-3" class="pseudo button toggle">Weight</label>
         <div class="row">
             <div class="card">
-                <header>Length</header>
+                <header>Length (m)</header>
         <select name="length1" id="length1">
         <option value="42195">Marathon</option>
             <option value="8848" selected>Mount Everest</option>
@@ -42,7 +42,7 @@
         </footer>
             </div>
             <div class="card">
-                <header>Area</header>
+                <header>Area (m2)</header>
     <select name="area1" id="area1">
         <option value="510072000000" selected>Earth</option>
         <option value="696241000">Texas</option>
@@ -74,19 +74,38 @@
         </footer>
             </div>
             <div class="card">
-                <header>
-                    <h3>Subscribe?</h3>
-                </header>
-                <section>
-                    <input type="text" placeholder="Full Name" aria-label="Full Name">
-                </section>
-                <section>
-                    <input type="email" placeholder="Email" aria-label="Email">
-                </section>
-                <footer>
-                    <button class="success">Finish!</button>
-                    <label for="tabC-2" class="button dangerous">Back</label>
-                </footer>
+                <header>Weight (kg)</header>
+        <select name="weight1" id="weight1">
+        <option value="6000000000000000000000000">Earth</option>
+        <option value="7300000">Eiffel tower</option>
+        <option value="150000">Blue whale</option>
+        <option value="12650">Double decker bus</option>
+        <option value="88.8">Average US man</option>
+        <option value="77.1">Average French man</option>
+        <option value="26">60" flat screen TV</option>
+        <option value="4">House cat</option>
+        <option value="1">Bag of sugar</option>
+        <option value="0.019">House mouse</option>
+        <option value="0.000029">Grain of rice</option>
+    </select>
+ in a 
+    <select name="weight2" id="weight2">
+        <option value="6000000000000000000000000">Earth</option>
+        <option value="7300000">Eiffel tower</option>
+        <option value="150000">Blue whale</option>
+        <option value="12650">Double decker bus</option>
+        <option value="88.8">Average US man</option>
+        <option value="77.1">Average Frenchman</option>
+        <option value="26">60" flat screen TV</option>
+        <option value="4">House cat</option>
+        <option value="1">Bag of sugar</option>
+        <option value="0.019">House mouse</option>
+        <option value="0.000029">Grain of rice</option>
+    </select>
+    <footer>
+        <button id="weightButton">Go!</button>
+    <p><span id="weightResult"></span></p>
+        </footer>
             </div>
         </div>
     </div>
