@@ -15,7 +15,7 @@ function setResult(first, second, destination){
 	var result = valueTwo/valueOne;
 
  	// construct sentence
-	var sentence = "There are " + result + " " + nameOne + "s in a " + nameTwo ;
+	var sentence = "There's " + result + " " + pluralize(nameOne, result) + " in a " + nameTwo ;
 
 	// set sentence
 	u("#"+destination).text(sentence);
